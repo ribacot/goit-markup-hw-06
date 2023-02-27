@@ -24,9 +24,11 @@
 					>
 
 					<ul class="list head-nav">
-						<li class="item"><a href="./index.html" class="link head-nav-link vizit">Studio</a></li>
 						<li class="item">
-							<a href="./portfolio.html" class="link head-nav-link ">Portfolio</a>
+							<a href="./index.html" class="link head-nav-link vizit">Studio</a>
+						</li>
+						<li class="item">
+							<a href="./portfolio.html" class="link head-nav-link">Portfolio</a>
 						</li>
 						<li class="item"><a href="" class="link head-nav-link">Contacts</a></li>
 					</ul>
@@ -34,7 +36,7 @@
 				<address class="contact">
 					<ul class="list list-contact">
 						<li class="item">
-							<a href="mailto:info@devstudio.com" class="link ">info@devstudio.com</a>
+							<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
 						</li>
 						<li class="item">
 							<a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
@@ -48,8 +50,10 @@
 			<!-- Hero-->
 			<section class="hero">
 				<div class="container">
-					<h1 class="hero-title">Effective Solutions for Your Business </h1>
-					<button class="hero-btn button " type="button" data-modal-open>Order Service</button>
+					<h1 class="hero-title">Effective Solutions for Your Business</h1>
+					<button class="hero-btn button" type="button" data-modal-open>
+						Order Service
+					</button>
 				</div>
 			</section>
 			<!-- перевагі -->
@@ -415,14 +419,58 @@
 
 		<!-- modal -->
 
-		<div class="backdrop is-hidden "data-modal>
-			<div class="hero-modal">					<button type="button" class="hero-modal-close" data-modal-close><svg class="hero-modal-close-icon">
-				<use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
-			</svg></button>
-</div>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="hero-modal">
+				<button type="button" class="hero-modal-close" data-modal-close>
+					<svg class="hero-modal-close-icon">
+						<use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
+					</svg>
+				</button>
+				<form name="modal-form">
+					<p class="form-title">Leave your contacts and we will call you back</p>
+					<label class="label username"
+						>Name
+						<!-- <svg class="form-icon" width="18" heigt="24">
+						<use href="./images/symbol-defs.svg#icon-instagram" ></use>
+					</svg> -->
+						<input type="text" name="username" />
+					</label>
+					<label class="label phone"
+						>Phone
+						<!-- <svg class="form-icon" width="18" heigt="24">
+						<use href="./images/symbol-defs.svg#icon-instagram
+						" ></use>
+					</svg> -->
+						<input type="tel" name="phone" placeholder="" />
+					</label>
+					<label class="label mail"
+						>Email
+						<!-- <svg class="form-icon" width="18" heigt="24">
+						<use href="./images/symbol-defs.svg#icon-instagram" ></use>
+					</svg> -->
+						<input type="mail" />
+					</label>
+					<label class="label coment"
+						>Comment
+
+						<textarea
+							name="coment"
+							cols="30"
+							rows="10"
+							placeholder="Text input"
+						></textarea>
+					</label>
+
+					<label class="label checkbox">
+						<input type="checkbox" name="valid" />
+						<p>I accept the terms and conditions of the <a href="">Privacy Policy </a></p>
+					</label>
+					<button type="submit" class="form-btn hero-btn">Send</button>
+				</form>
+			</div>
 		</div>
 
-<!-- skript -->
+		<!-- skript -->
 
 		<script src="./js/modal.js"></script>
 	</body>
