@@ -84,7 +84,6 @@ body {
 .logo-link {
 	display: block;
 	text-decoration: none;
-
 }
 
 .list {
@@ -304,7 +303,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 408px;
-	height: 576px;
+	/* height: 576px; */
 	top: 50%;
 	left: 50%;
 
@@ -329,7 +328,6 @@ img {
 	position: absolute;
 	display: flex;
 	padding: 8px;
-	/* margin-left: auto; */
 	top: 24px;
 	right: 24px;
 
@@ -350,28 +348,90 @@ img {
 }
 
 /* form */
+
 .modal-form {
+	width: 100%;
+}
+
+.modal-form-title {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 16px;
+}
+.modal-form-containe {
+	margin-bottom: 16px;
+}
+.modal-form-container > .modal-form-label:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.modal-form-label {
 	display: flex;
 	flex-direction: column;
+
+	color: var(--subtitl-text);
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
 }
 
-.form-title {
+.modal-form-container input {
+	width: 100%;
+	height: 40px;
 	margin: 0;
-	text-align: center;
-}
-.label {
-	display: inline-flex;
-	flex-direction: column;
+	padding: 0;
+	padding-left: 38px;
+	border: 1px solid #21212133;
+	border-radius: 4px;
 }
 
-.form-icon {
+
+.modal-form-position-icon {
+	position: relative;
+	width: 100%;
+	margin-top: 4px;
 }
-.username {
+.modal-form-icon {
+	position: absolute;
+	display: inline-flex;
+	top: 50%;
+	left: 16px;
+
+	width: 18px;
+	height: 18px;
+
+	transform: translateY(-50%);
 }
-.phone {
+
+.modal-form-container input:focus +.modal-form-icon{
+	fill: var(--pressed-state);
 }
-.mail {
+
+.textarea {
+	height: 138px;
+	padding: 0;
+	resize: none;
+
+	padding-top: 8px;
+	padding-left: 16px;
+	margin: 0;
+
+	border: 1px solid #21212133;
+	border-radius: 4px;
 }
+
+.textarea::placeholder {
+	color: #75757580;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+}
+
+.modal-form-container input:focus,
+textarea:focus {
+	outline-color: var(--primari-brend);
+}
+
 input[type="checkbox"]{
 	position: absolute;
 	width: 1px;
@@ -383,8 +443,31 @@ input[type="checkbox"]{
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.checkbox {
+	align-items: center;
+	flex-direction: row;
+	margin-bottom: 24px;
+}
+.checkbox > p {
+	margin-left: 4px;
+}
+.checkbox span{
+	/* display: block; */
+	width: 16px;
+	height: 16px;
+	border: 1px solid var(--dark);
+	background-color: brown;
+
+	transition: background var(--transition-time ) var(--timing-funcion);
 
 }
+
+ .checkbox input:checked+span{
+	background-image: url(../images/webstudio/);
+background-color: #4d5ae5;}
+
 
 .form-btn {
 	display: block;

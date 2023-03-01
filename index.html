@@ -427,42 +427,52 @@
 					</svg>
 				</button>
 				<form name="modal-form">
-					<p class="form-title">Leave your contacts and we will call you back</p>
-					<label class="label username"
-						>Name
-						<!-- <svg class="form-icon" width="18" heigt="24">
-						<use href="./images/symbol-defs.svg#icon-instagram" ></use>
-					</svg> -->
-						<input type="text" name="username" />
-					</label>
-					<label class="label phone"
-						>Phone
-						<!-- <svg class="form-icon" width="18" heigt="24">
-						<use href="./images/symbol-defs.svg#icon-instagram
-						" ></use>
-					</svg> -->
-						<input type="tel" name="phone" placeholder="" />
-					</label>
-					<label class="label mail"
-						>Email
-						<!-- <svg class="form-icon" width="18" heigt="24">
-						<use href="./images/symbol-defs.svg#icon-instagram" ></use>
-					</svg> -->
-						<input type="mail" />
-					</label>
-					<label class="label coment"
-						>Comment
+					<p class="modal-form-title">Leave your contacts and we will call you back</p>
 
-						<textarea
-							name="coment"
-							cols="30"
-							rows="10"
-							placeholder="Text input"
-						></textarea>
-					</label>
+					<div class="modal-form-container">
+						<label class="modal-form-label username"
+							>Name
+							<div class="modal-form-position-icon">
+								<input type="text" name="username" />
+								<svg class="modal-form-icon" width="18px" heigt="24px">
+									<use href="./images/symbol-defs.svg#icon-instagram"></use>
+								</svg>
+							</div>
+						</label>
+						<label class="modal-form-label phone"
+							>Phone
+							<div class="modal-form-position-icon">
+								<input type="telt" name="phone" />
+								<svg class="modal-form-icon" width="18px" heigt="24px">
+									<use href="./images/symbol-defs.svg#icon-instagram"></use>
+								</svg>
+							</div>
+						</label>
+						<label class="modal-form-label email"
+							>Email
+							<div class="modal-form-position-icon">
+								<input type="email" name="email" />
+								<svg class="modal-form-icon" width="18px" heigt="24px">
+									<use href="./images/symbol-defs.svg#icon-instagram"></use>
+								</svg>
+							</div>
+						</label>
+						<label class="modal-form-label coment"
+							>Comment
 
-					<label class="label checkbox">
-						<input type="checkbox" name="valid" />
+							<textarea
+								name="coment"
+								cols="30"
+								rows="10"
+								placeholder="Text input"
+								class="textarea"
+							></textarea>
+						</label>
+					</div>
+
+					<label class="modal-form-label checkbox">
+						<input type="checkbox" name="licens" />
+						<span></span>
 						<p>I accept the terms and conditions of the <a href="">Privacy Policy </a></p>
 					</label>
 					<button type="submit" class="form-btn hero-btn">Send</button>
