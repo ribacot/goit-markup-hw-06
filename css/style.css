@@ -443,7 +443,6 @@ img {
 
 .textarea::placeholder {
 	color: #75757580;
-	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.04em;
 }
@@ -732,7 +731,6 @@ input[type="checkbox"] {
 
 /* subscribe */
 
-
 .subscribe-label {
 	position: absolute;
 	width: 1px;
@@ -753,7 +751,6 @@ input[type="checkbox"] {
 	padding-left: 16px;
 	margin-right: 24px;
 
-
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -762,12 +759,13 @@ input[type="checkbox"] {
 }
 
 .subscribe-email::placeholder {
-	margin: 0;
 	color: rgba(255, 255, 255, 0.6);
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
 }
 
-.subscribe-email:focus {
-	outline: var(--pressed-state);
+.subscribe-email::placeholder {
 }
 
 .subscribe-btn {
