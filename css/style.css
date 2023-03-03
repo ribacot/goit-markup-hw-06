@@ -371,7 +371,7 @@ img {
 	margin-bottom: 16px;
 }
 
-.modal-form-containe {
+.modal-form-container {
 	margin-bottom: 16px;
 }
 
@@ -395,7 +395,7 @@ img {
 	margin: 0;
 	padding: 0;
 	padding-left: 38px;
-	border: 1.25px solid #21212133;
+	border: 1.25px solid currentColor;
 	border-radius: 4px;
 
 	transition-property: outline;
@@ -473,22 +473,23 @@ input[type="checkbox"] {
 }
 
 .checkbox > p {
+	margin: 0;
 	margin-left: 4px;
 }
 
 .checkbox span {
+	position: relative;
+	display: inline-flex;
 	width: 16px;
 	height: 16px;
 	border: 1px solid var(--dark);
 	border-radius: 2px;
+	overflow: visible;
 
 	transition-property: border;
 }
 
 .checkbox-icon {
-	display: inline-flex;
-	width: 16px;
-	height: 16px;
 	opacity: 0;
 
 	transition-property: opacity;
@@ -677,14 +678,17 @@ input[type="checkbox"] {
 	margin-top: 0;
 	margin-bottom: 0;
 	max-width: 264px;
+	margin-right: 120px;
 }
 
 .container-basement {
 	display: flex;
+	justify-content: flex-start;
 }
 
 .social {
-	margin-left: 120px;
+	/* margin-left: 120px; */
+	margin-right: 80px;
 }
 .social-title {
 	font-size: 16px;
@@ -725,6 +729,66 @@ input[type="checkbox"] {
 .link-social:hover,
 .link-social:focus {
 	background-color: var(--success);
+}
+
+/* subscribe */
+
+.subscribe {
+	/* display: flex;
+	flex-wrap: nowrap; */
+	/* margin-left: 80px; */
+}
+.obvertka{
+	display: inline-flex;
+}
+
+.subscribe-label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+
+
+}
+
+.subscribe-email {
+	color: var(--light);
+	width: 264px;
+	height: 40px;
+
+	padding-left: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	background-color: var(--dark);
+}
+.subscribe-email::placeholder {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-email:focus {
+	outline: var(--pressed-state);
+}
+
+.subscribe-btn {
+	display: inline-flex;
+	justify-content: center;
+	gap: 16px;
+	width: 164px;
+	align-items: center;
+	padding: 8px 24px;
+	margin-left: 24px;
+
+	color: var(--white);
+	background-color: var(--primari-brend);
+	border-color: var(--primari-brend);
+	fill: currentColor;
 }
 
 /* portfolio */
