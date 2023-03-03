@@ -766,6 +766,7 @@ input[type="checkbox"] {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 	background-color: var(--dark);
+	margin-right: 24px;
 }
 .subscribe-email::placeholder {
 	margin: 0;
@@ -783,7 +784,7 @@ input[type="checkbox"] {
 	width: 164px;
 	align-items: center;
 	padding: 8px 24px;
-	margin-left: 24px;
+	/* margin-left: 24px; */
 
 	color: var(--white);
 	background-color: var(--primari-brend);
