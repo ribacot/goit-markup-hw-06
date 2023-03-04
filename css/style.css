@@ -481,7 +481,7 @@ input[type="checkbox"]:focus + span {
 	display: inline-flex;
 	width: 16px;
 	height: 16px;
-	margin-right: 4px;
+	margin-right: 8px;
 	border: 1px solid var(--dark);
 	border-radius: 2px;
 	overflow: visible;
