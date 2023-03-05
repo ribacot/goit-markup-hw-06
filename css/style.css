@@ -348,17 +348,6 @@ img {
 
 /* form */
 
-/* animation */
-
-.modal-form-container input,
-.modal-form-icon,
-.textarea,
-.checkbox span,
-.checkbox-icon {
-	transition-duration: var(--transition-time);
-	transition-timing-function: var(--timing-funcion);
-}
-/* animation end */
 
 .modal-form {
 	width: 100%;
@@ -396,6 +385,9 @@ img {
 	border-radius: 4px;
 
 	transition-property: border;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--timing-funcion);
+
 }
 
 .modal-form-position-icon {
@@ -417,6 +409,9 @@ img {
 
 	transform: translateY(-50%);
 	transition-property: fill;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--timing-funcion);
+
 }
 
 .modal-form-container input:focus + .modal-form-icon {
@@ -438,6 +433,9 @@ img {
 
 	transition-property: border;
 	outline: none;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--timing-funcion);
+
 }
 
 .textarea::placeholder {
@@ -487,6 +485,9 @@ input[type="checkbox"]:focus + span {
 	overflow: visible;
 
 	transition-property: border;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--timing-funcion);
+
 }
 
 .checkbox-icon {
@@ -495,6 +496,9 @@ input[type="checkbox"]:focus + span {
 	opacity: 0;
 
 	transition-property: opacity;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--timing-funcion);
+
 }
 
 .checkbox input:checked + span,
@@ -505,7 +509,7 @@ input[type="checkbox"]:focus + span {
 
 .form-btn {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto; 
 }
 
 /* features */
